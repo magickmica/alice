@@ -141,7 +141,8 @@ body::before{
 .pol:nth-child(4){transform:rotate(3deg);}
 .pol:nth-child(5){transform:rotate(-2deg);}
 .pol:hover{transform:rotate(0deg) scale(1.07);z-index:10;}
-.pol-img{width:130px;height:110px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;}
+.pol-img{width:130px;height:110px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;overflow:hidden;}
+.pol-img img{width:100%;height:100%;object-fit:cover;display:block;}
 .pol-cap{font-family:'Dancing Script',cursive;font-size:1rem;color:#222;text-align:center;margin-top:.5rem;display:block;}
 
 /* EXCLUSIVE BUBBLE */
@@ -382,6 +383,12 @@ footer p{font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.2em;colo
   <h1 class="hed-xl"><span class="holo-text">WE'RE ALL<br>MAD HERE.</span></h1>
   <p class="dek" style="max-width:640px;">She fell. He grinned. The rest is history. Alice and the Cheshire Cat open up about the encounter that changed everything — and what comes next for Wonderland's favourite pair.</p>
 
+  <!-- COVER HERO IMAGE -->
+  <figure style="margin:1.75rem 0;border:1px solid rgba(180,79,255,.4);overflow:hidden;">
+    <img src="/alice-which-way-hm.png" alt="Alice looking up at the Cheshire Cat in the glowing forest" style="width:100%;display:block;">
+    <figcaption style="font-family:'Oswald',sans-serif;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--cyan);text-align:center;padding:.6rem;background:#0a0020;">"I've often seen a cat without a grin... but never a grin without a cat."</figcaption>
+  </figure>
+
   <div class="pq">
     <p>"He looked at me like he already knew how the story ended. That smile wasn't cruel — it was the kindest thing in Wonderland."</p>
     <cite>— Alice, exclusively to Wonderland Weekly</cite>
@@ -406,12 +413,12 @@ footer p{font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.2em;colo
 </section>
 
 <!-- POLAROIDS -->
-<div class="pols" aria-hidden="true">
-  <div class="pol"><div class="pol-img" style="background:linear-gradient(135deg,#3d006e,#00c8ff);">😸</div><span class="pol-cap">Caught Smiling? ♥</span></div>
-  <div class="pol"><div class="pol-img" style="background:linear-gradient(135deg,#001a40,#8000ff);">💭</div><span class="pol-cap">Deep in Thought</span></div>
-  <div class="pol"><div class="pol-img" style="background:linear-gradient(135deg,#200040,#004050);">👁️</div><span class="pol-cap">Still Following...</span></div>
-  <div class="pol"><div class="pol-img" style="background:linear-gradient(135deg,#1a0020,#600080);">🌙</div><span class="pol-cap">Moonlit Glade</span></div>
-  <div class="pol"><div class="pol-img" style="background:linear-gradient(135deg,#001500,#004030);">🫖</div><span class="pol-cap">Tea For Two ♥</span></div>
+<div class="pols">
+  <div class="pol"><div class="pol-img"><img src="/alice-cheshire-cat.png" alt="Alice looking up at the Cheshire Cat" loading="lazy"></div><span class="pol-cap">Caught Smiling? ♥</span></div>
+  <div class="pol"><div class="pol-img"><img src="/alice-cry-pool-tears.png" alt="Alice deep in thought" loading="lazy"></div><span class="pol-cap">Deep in Thought</span></div>
+  <div class="pol"><div class="pol-img"><img src="/alice-i-am.png" alt="Alice in Wonderland" loading="lazy"></div><span class="pol-cap">Still Following...</span></div>
+  <div class="pol"><div class="pol-img"><img src="/alice-now.png" alt="Alice with the Tweedles under a starry sky" loading="lazy"></div><span class="pol-cap">Moonlit Glade</span></div>
+  <div class="pol"><div class="pol-img"><img src="/alice-tea-cup.png" alt="Alice sitting in a giant teacup" loading="lazy"></div><span class="pol-cap">Tea For Two ♥</span></div>
 </div>
 
 <!-- ══════════════════ DEEP DIVE ══════════════════ -->
@@ -428,6 +435,11 @@ footer p{font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.2em;colo
     <div class="kicker kicker-pink">Analysis &nbsp;·&nbsp; Cryptic Wisdom Decoded</div>
     <h2 class="hed-lg" style="color:var(--hot-pink);">WHAT THE CHESHIRE CAT<br><span style="color:#fff;">REALLY MEANS</span></h2>
     <p class="dek">Every riddle, every half-vanished truth. We've spent three issues decoding his philosophy — and what we found will change how you see everything.</p>
+
+    <figure style="margin:1.5rem 0;border:1px solid rgba(255,45,120,.4);overflow:hidden;">
+      <img src="/alice-who.png" alt="Alice with WHO? graffiti and the Drink Me bottle" style="width:100%;display:block;">
+      <figcaption style="font-family:'Oswald',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--hot-pink);text-align:center;padding:.55rem;background:#0a0010;">The question Wonderland never stops asking</figcaption>
+    </figure>
 
     <div class="body-text">
       <p><strong>"We're all mad here."</strong> It sounds like a warning. It sounds nihilistic, even. Read it again slowly, with the Cat's voice in your head — that languid, amused rumble. Hear how it doesn't condemn. It <em>invites</em>. It says: you don't have to pretend here. Everyone in Wonderland is already operating outside the rules of sense. You're not broken for feeling the same way. You belong.</p>
@@ -744,23 +756,29 @@ footer p{font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.2em;colo
   <p class="dek">Wonderland's sartorial scene has always been years ahead of the surface world. This season: three looks, zero rules, infinite shimmer.</p>
 
   <div class="three-col">
-    <div class="panel panel-pink" style="text-align:center;">
-      <div style="font-size:3rem;margin-bottom:.75rem;">✨</div>
-      <span class="badge bp" style="margin-bottom:.75rem;display:inline-block;">Look 01</span>
-      <h3 class="hed-sm"><span class="holo-text">Holographic</span></h3>
-      <p style="font-size:1rem;color:#b0a0cc;line-height:1.65;margin-top:.5rem;">Rainbow-shift fabrics that refract with every step. Silver boots with wedge heels shaped like crescent moons. A cat-eye so sharp it leaves a visible mark on the air. The Cheshire Cat approved this personally. He was visible for eight entire minutes. A record.</p>
+    <div class="panel panel-pink" style="text-align:center;padding:0;overflow:hidden;">
+      <img src="/alice-drink-me-what.png" alt="Alice in holographic dress with Drink Me bottle" style="width:100%;height:220px;object-fit:cover;display:block;">
+      <div style="padding:1.5rem;">
+        <span class="badge bp" style="margin-bottom:.75rem;display:inline-block;">Look 01</span>
+        <h3 class="hed-sm"><span class="holo-text">Holographic</span></h3>
+        <p style="font-size:1rem;color:#b0a0cc;line-height:1.65;margin-top:.5rem;">Rainbow-shift fabrics that refract with every step. Silver boots with wedge heels shaped like crescent moons. A cat-eye so sharp it leaves a visible mark on the air. The Cheshire Cat approved this personally. He was visible for eight entire minutes. A record.</p>
+      </div>
     </div>
-    <div class="panel panel-cyan" style="text-align:center;">
-      <div style="font-size:3rem;margin-bottom:.75rem;">🌙</div>
-      <span class="badge bc" style="margin-bottom:.75rem;display:inline-block;">Look 02</span>
-      <h3 class="hed-sm" style="color:var(--purple);">Dreamcore</h3>
-      <p style="font-size:1rem;color:#b0a0cc;line-height:1.65;margin-top:.5rem;">Soft lilac tulle. Oversized bows in midnight blue. Lace at the wrist and the hem. Stars pinned into the hair like they simply landed there. The overall effect is someone mid-dream who is, paradoxically, completely in control of everything.</p>
+    <div class="panel panel-cyan" style="text-align:center;padding:0;overflow:hidden;">
+      <img src="/alice-now.png" alt="Alice in pink dress with NOW typography under starry sky" style="width:100%;height:220px;object-fit:cover;display:block;">
+      <div style="padding:1.5rem;">
+        <span class="badge bc" style="margin-bottom:.75rem;display:inline-block;">Look 02</span>
+        <h3 class="hed-sm" style="color:var(--purple);">Dreamcore</h3>
+        <p style="font-size:1rem;color:#b0a0cc;line-height:1.65;margin-top:.5rem;">Soft lilac tulle. Oversized bows in midnight blue. Lace at the wrist and the hem. Stars pinned into the hair like they simply landed there. The overall effect is someone mid-dream who is, paradoxically, completely in control of everything.</p>
+      </div>
     </div>
-    <div class="panel panel-yellow" style="text-align:center;">
-      <div style="font-size:3rem;margin-bottom:.75rem;">🫖</div>
-      <span class="badge by" style="margin-bottom:.75rem;display:inline-block;">Look 03</span>
-      <h3 class="hed-sm" style="color:var(--yellow);">Mad Tea Party</h3>
-      <p style="font-size:1rem;color:#b0a0cc;line-height:1.65;margin-top:.5rem;">Chaotic layering. Patterns that argue with each other charmingly. Hats stacked on hats. Clocks worn as jewelry — none of them showing the correct time, because that would be beside the point. Being punctual is optional. Looking extraordinary is not.</p>
+    <div class="panel panel-yellow" style="text-align:center;padding:0;overflow:hidden;">
+      <img src="/alice-drinkme-never.png" alt="Alice in NEVER typography dress with Drink Me bottle" style="width:100%;height:220px;object-fit:cover;display:block;">
+      <div style="padding:1.5rem;">
+        <span class="badge by" style="margin-bottom:.75rem;display:inline-block;">Look 03</span>
+        <h3 class="hed-sm" style="color:var(--yellow);">Mad Tea Party</h3>
+        <p style="font-size:1rem;color:#b0a0cc;line-height:1.65;margin-top:.5rem;">Chaotic layering. Patterns that argue with each other charmingly. Hats stacked on hats. Clocks worn as jewellery — none of them showing the correct time, because that would be beside the point. Being punctual is optional. Looking extraordinary is not.</p>
+      </div>
     </div>
   </div>
 
@@ -776,6 +794,21 @@ footer p{font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.2em;colo
   <div class="divider-line"></div>
   <span class="divider-text">✦ &nbsp; THE MAD TEA PARTY: WHAT TO SERVE &nbsp; ✦</span>
   <div class="divider-line"></div>
+</div>
+
+<div class="three-col" style="margin-bottom:1rem;">
+  <figure style="margin:0;border:1px solid rgba(255,210,0,.4);overflow:hidden;">
+    <img src="/alice-mad-tea-party.png" alt="Alice and the Mad Hatter at the tea table" style="width:100%;height:280px;object-fit:cover;display:block;">
+    <figcaption style="font-family:'Oswald',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);text-align:center;padding:.55rem;background:#0a0800;">"Six impossible things before breakfast"</figcaption>
+  </figure>
+  <figure style="margin:0;border:1px solid rgba(0,245,255,.4);overflow:hidden;">
+    <img src="/alice-tea-mad-hatter.png" alt="Alice at the tea party with the Mad Hatter and White Rabbit" style="width:100%;height:280px;object-fit:cover;display:block;">
+    <figcaption style="font-family:'Oswald',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);text-align:center;padding:.55rem;background:#000c1a;">"I give myself very good advice, but I very seldom follow it"</figcaption>
+  </figure>
+  <figure style="margin:0;border:1px solid rgba(255,45,120,.4);overflow:hidden;">
+    <img src="/alice-jam-.png" alt="Alice with rose petal jam" style="width:100%;height:280px;object-fit:cover;display:block;">
+    <figcaption style="font-family:'Oswald',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--hot-pink);text-align:center;padding:.55rem;background:#100008;">The Rose Petal Jam, allegedly</figcaption>
+  </figure>
 </div>
 
 <div class="two-col">
@@ -829,6 +862,11 @@ footer p{font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.2em;colo
   <div class="kicker">Investigative Report · We Went In. We Asked Questions.</div>
   <h2 class="hed-lg"><span class="holo-text">10 THINGS YOU DIDN'T KNOW<br>ABOUT WONDERLAND</span></h2>
   <p class="dek">We spent three weeks embedded in Wonderland. What we found surprised everyone, including us.</p>
+
+  <figure style="margin:1.5rem 0;border:1px solid rgba(180,79,255,.4);overflow:hidden;">
+    <img src="/alice-distorted.png" alt="Alice falling upside down through the rabbit hole" style="width:100%;display:block;">
+    <figcaption style="font-family:'Oswald',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--purple);text-align:center;padding:.55rem;background:#0c001f;">Field research is occasionally upside down</figcaption>
+  </figure>
 
   <div class="two-col" style="margin-top:1.25rem;">
     <div style="display:flex;flex-direction:column;gap:1rem;">
@@ -890,6 +928,11 @@ footer p{font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.2em;colo
   <article class="panel">
     <div class="kicker">Reader Mail · You Wrote. We Read Everything.</div>
     <h2 class="hed-md" style="color:var(--yellow);margin-bottom:1.25rem;">YOUR LETTERS THIS SEASON</h2>
+
+    <figure style="margin:0 0 1.5rem 1.5rem;border:1px solid rgba(180,79,255,.4);overflow:hidden;float:right;width:200px;max-width:40%;" class="letters-figure">
+      <img src="/alice-mouse.png" alt="Alice swimming with the mouse in the Pool of Tears" style="width:100%;display:block;">
+      <figcaption style="font-family:'Oswald',sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--purple);text-align:center;padding:.5rem;background:#0c001f;">From the Pool of Tears</figcaption>
+    </figure>
 
     <div class="letter-item">
       <span class="letter-from">Penelope S., Age 29, Surface World</span>
