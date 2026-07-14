@@ -437,6 +437,28 @@ footer p{font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.2em;colo
 
 <main class="page">
 
+<!-- ══════════════════ SITE BACK-NAV ══════════════════ -->
+<style>
+  .ww-topnav{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;padding:1.4rem 0 .25rem;}
+  .ww-navlink{
+    font-family:'Oswald',sans-serif;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;
+    text-decoration:none;color:#c8b3e8;
+    background:rgba(180,79,255,.08);border:1px solid rgba(180,79,255,.35);border-radius:5px;
+    padding:.4rem .95rem;display:inline-flex;align-items:center;gap:.5rem;
+    transition:color .18s,border-color .18s,background .18s,box-shadow .18s;
+  }
+  .ww-navlink:hover,.ww-navlink:focus-visible{
+    color:#060011;background:var(--cyan);border-color:var(--cyan);
+    box-shadow:0 0 18px rgba(0,245,255,.45);outline:none;
+  }
+  .ww-navlink .ww-arrow{color:var(--lime);transition:color .18s;}
+  .ww-navlink:hover .ww-arrow,.ww-navlink:focus-visible .ww-arrow{color:#060011;}
+</style>
+<nav class="ww-topnav" aria-label="Site">
+  <a class="ww-navlink" href="https://magickmica.github.io/aliens/newsstand.html"><span class="ww-arrow" aria-hidden="true">◀</span>Newsstand</a>
+  <a class="ww-navlink" href="https://magickmica.github.io/"><span class="ww-arrow" aria-hidden="true">◀</span>Main index</a>
+</nav>
+
 <!-- ══════════════════ COVER STORY ══════════════════ -->
 <div id="cover"></div>
 <div class="divider" style="margin-top:2rem;">
